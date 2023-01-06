@@ -26,13 +26,13 @@ export default class Artists extends Model {
 
 	@Column({
 		type: DataType.STRING,
-		allowNull: false
+		allowNull: true
 	})
-	avatar!: string
+	avatar?: string
 
 	@Column({
 		type: DataType.STRING,
-		allowNull: false
+		allowNull: true
 	})
-	bio!: string
+	bio?: string
 }

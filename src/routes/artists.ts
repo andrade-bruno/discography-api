@@ -1,13 +1,12 @@
 import { Router } from "express"
 
-import {
-	createArtist,
-	getAllArtists
-} from '../controllers/ArtistsController'
+import ArtistsController from '../controllers/ArtistsController'
 
 const router = Router()
 
-router.get('/', getAllArtists)
-router.post('/', createArtist)
+router.get('/', ArtistsController.getAllArtists)
+router.get('/:id', ArtistsController.getArtistByID)
+router.post('/', ArtistsController.createArtist)
+router.delete('/:id', ArtistsController.deleteArtist)
 
 export default router
