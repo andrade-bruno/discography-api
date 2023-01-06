@@ -1,13 +1,14 @@
 {
 	"name": "discography-api",
 	"version": "1.0.0",
-	"type": "module",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"build": "rimraf dist && npx tsc",
+		"prestart": "npm run build",
 		"start": "nodemon dist/index.js",
-		"dev": "npx tsc -w & nodemon dist/index.js"
+		"predev": "npm run build",
+		"dev": "concurrently \"npx tsc -w\" \"nodemon dist/index.js\""
 	},
 	"repository": {
 		"type": "git",
@@ -27,7 +28,13 @@
 		"typescript": "^4.9.4"
 	},
 	"dependencies": {
+		"concurrently": "^7.6.0",
+		"dotenv": "^16.0.3",
 		"express": "^4.18.2",
-		"rimraf": "^3.0.2"
+		"mysql2": "^2.3.3",
+		"path": "^0.12.7",
+		"rimraf": "^3.0.2",
+		"sequelize": "^6.28.0",
+		"sequelize-cli": "^6.5.2"
 	}
 }
