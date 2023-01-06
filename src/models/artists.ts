@@ -1,22 +1,38 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class Artists extends Model {
-    static associate(models) {
-      // define association here
-    }
-  }
-  Artists.init({
-    title: DataTypes.STRING,
-    age: DataTypes.TINYINT,
-    mainGenre: DataTypes.STRING,
-    avatar: DataTypes.STRING,
-    bio: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'Artists',
-  });
-  return Artists;
-};
+import { Table, Model, Column, DataType } from 'sequelize-typescript'
+
+@Table({
+	timestamps: true,
+	tableName: 'Artists'
+})
+
+export default class Artists extends Model {
+	@Column({
+		type: DataType.STRING,
+		allowNull: false
+	})
+	title!: string
+
+	@Column({
+		type: DataType.DATE,
+		allowNull: true
+	})
+	formedDate?: number
+
+	@Column({
+		type: DataType.STRING,
+		allowNull: false
+	})
+	mainGenre!: string
+
+	@Column({
+		type: DataType.STRING,
+		allowNull: false
+	})
+	avatar!: string
+
+	@Column({
+		type: DataType.STRING,
+		allowNull: false
+	})
+	bio!: string
+}

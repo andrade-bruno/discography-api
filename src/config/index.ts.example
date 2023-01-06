@@ -1,0 +1,15 @@
+import { Sequelize } from "sequelize-typescript"
+import Artists from '../models/artists'
+
+export const connection = new Sequelize({
+	dialect: ''
+	host: ''
+	port: 3306,
+	username: ''
+	password: ''
+	database: ''
+	logging: false,
+	models: [Artists]
+})
+
+export default connection
