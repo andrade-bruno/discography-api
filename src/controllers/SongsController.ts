@@ -26,7 +26,7 @@ export default class SongsController {
 			const song = await Songs.findByPk(id)
 
 			if (!song) res.status(404).json({ message: 'Song not found' })
-			res.status(200).json(song)
+			else res.status(200).json(song)
 		} catch (error: any) {
 			res.status(500).json({ message: error.message })
 		}
@@ -36,10 +36,12 @@ export default class SongsController {
 		const { id } = req.params
 		try {
 			const song = await Songs.findByPk(id)
+			
 			if (!song) res.status(404).json({ message: 'Song not found' })
-
-			await Songs.destroy({where: {id}})
-			res.status(200).json({ message: 'Song deleted successfully', data: song })
+			else {
+				await Songs.destroy({where: {id}})
+				res.status(200).json({ message: 'Song deleted successfully', data: song })
+			}
 		} catch (error: any) {
 			res.status(500).json({ message: error.message })
 		}

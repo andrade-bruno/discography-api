@@ -26,7 +26,7 @@ export default class ArtistController {
 			const artist = await Artists.findByPk(id)
 
 			if (!artist) res.status(404).json({ message: 'Artist not found' })
-			res.status(200).json(artist)
+			else res.status(200).json(artist)
 		} catch (error: any) {
 			res.status(500).json({ message: error.message })
 		}
@@ -36,10 +36,12 @@ export default class ArtistController {
 		const { id } = req.params
 		try {
 			const artist = await Artists.findByPk(id)
+			
 			if (!artist) res.status(404).json({ message: 'Artist not found' })
-
-			await Artists.destroy({where: {id}})
-			res.status(200).json({ message: 'Artist deleted successfully', data: artist })
+			else {
+				await Artists.destroy({where: {id}})
+				res.status(200).json({ message: 'Artist deleted successfully', data: artist })
+			}
 		} catch (error: any) {
 			res.status(500).json({ message: error.message })
 		}
