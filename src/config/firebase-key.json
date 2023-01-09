@@ -1,0 +1,12 @@
+{
+	"type": "service_account",
+	"project_id": "discography-api-node",
+	"private_key_id": "6d3c99a01a6800d8b5cb711d22c52127d7041d43",
+	"private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCfIYDU+haY2/FQ\nJArT/ssLKdqNyWISIeFuLwI3W2MqR9UMzdY1XqfISfJZnIknlHLy2tmCBIK0BFWQ\nn0BLyYSz/U/qPUHsG8pVnNzCjM1u8Hz6S6XsPknxLzWkReaECYehU14ZxdTBjK44\nHhQGWzlTxeNDox/EzBdjBjZNmAUxuFos+yaK9Y2mC27FqeN+dQY/l+BOJV//2AlI\n1nFhbtqzzF16iQVDwePTZsDeKcRCdlivgfar+oICIIyRdgN4c9m7u63t6rSLnEdQ\nOrqYCPf8dqiX0c9QfZkw2m2t+TPB23KKQb+q2pc6Gtj/Qj16rkPYkTUlvJfxqkGR\nTG4T5VwlAgMBAAECggEAGal8vfvVtJF1lTO2xlDG3DZD700cYmmx0cPFcvlrIMik\nQDQamRE6dAeOzGo8yRP8xJLL9FZ3YIH5bYDtDLvDCYaugkseLC4gH1XUWRB9Wahx\nMykLaTFzWbCAEU2PetgRlg/cc0IOySa/er/JAWxpLowRVhlCmIlENT0teS5smgOM\nQ58C+cgYdJwOS3zX4/Gs3Du6df+Qrx+GgAzoOeilaeQHnaWW3XHd1ZxGMoiC0BIG\n+wRa5+S95n6KhrHB25dXlyvx3VQxMcNh/a59dnvW+FRxgsF0k3SpF/bhgmMqNwmj\nZfH34rU71/bvXeGdrR7tsauNYqUawSd9EsXee9OOCQKBgQDafwPffQ61Xh8ZfFWQ\n1rFxf1c2tKByi7rymK7FzEkRG+QM1iWrbPDWW3c01YiU7qjOzzwvgjsS0NGT4Gl2\n3C5csOqSR4M1D0gi2b87gLj5FfJiHFtlJJ7P0STnWGLclxopFZLYJJIDOIqQU0d4\nhRfhmNOBgPGHODs389WdM6idXQKBgQC6cefuK1kstxEyIfiEXWAkE62j5VjA8MAv\n1crtoqeX42K9nT5baB1mmF91fMPEGV1BLweL69mckUXW0SYdXF/D6qFpzxWYeNth\nvN3x2FhfJ+5nQy07IK4LQv59Oe1bWLVYzHM5gDaBzFchF0LDS1szcWWdpSHw9N6Y\nGlHUBrIFaQKBgQCi2k65sc1Xsyp85WYlSVACZ0ZK2QBJwAn8LX7+oI/JN7+XLbnv\n9offTVchQxLE5sldM6sJQgjjsk6y6G3TELNhlN+RXcnWr2g1yZQ2NnAn/4qkQ7x/\nO3c/MARQhllRTzJJcvH7Ne66hdcJUXkQxCqTlEP433GmNmw0/QG3ZLyFZQKBgDOg\nRMuDP08NZfqOw4TLYkq7FDK01+2c/GqCdY11o5iAQyAkAVdILhPxj0U2BfMv3s2k\n2x8YcIpVA5SnFzm8EVxrhMSKrf0pQf3/USmdcWLv6Ki5RjYAJ5FAvL0qJBpOJvDu\ns90xLmakkV+9VCRFonxNIwkS56IT++r8JrpiHDs5AoGBAIrzMQrK/tV4H3+ac5Wg\n1g8B6cItLly5YHUx2z9ow50cHlz1KWK0rCwHIqFBBV9DsSS3RFWkpD/mBGn5nwD2\ng8nhdosrQ3mU0QcCktUlLypr79PwXUBlTriKrKhfE0qvo+QB3Q1et2JzNRgt/Zga\nR+JO1RrGIUulZZhBvP/eb2BB\n-----END PRIVATE KEY-----\n",
+	"client_email": "firebase-adminsdk-suevg@discography-api-node.iam.gserviceaccount.com",
+	"client_id": "109340036753350535135",
+	"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+	"token_uri": "https://oauth2.googleapis.com/token",
+	"auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+	"client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-suevg%40discography-api-node.iam.gserviceaccount.com"
+}

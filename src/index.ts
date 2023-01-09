@@ -1,17 +1,20 @@
-import express from 'express'
-const port = 8000
 
+import express from 'express'
+import connection from './config'
+import routes from './routes'
+import dotenv from 'dotenv'
+dotenv.config()
+
+const port = process.env.PORT || 8000
 const server = express()
 
-server.get('/', (req, res) => {
-	res.status(200).json('Discography API with Node, Typescript, Express and Sequelize')
-})
+routes(server)
 
-server.get('/Hi', (req, res) => {
-	res.status(200).json('Hi')
-})
+connection.sync()
+	.then(() => console.info('Database synced successfully'))
+	.catch(error => console.error(error))
 
 server.listen(port, () => {
-	console.info('\nServer is running!')
+	console.info('\nServer running!')
 	console.info(`http://localhost:${port}\n`)
 })
