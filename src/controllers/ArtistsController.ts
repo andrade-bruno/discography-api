@@ -46,4 +46,22 @@ export default class ArtistController {
 			res.status(500).json({ message: error.message })
 		}
 	}
+
+	static updateArtist: RequestHandler = async (req, res) => {
+		const newData = req.body
+		const id = req.params.id
+
+		try {
+			const artist = await Artists.findByPk(id)
+			
+			if (!artist) res.status(404).json({ message: 'Artist not found' })
+			else {
+				await Artists.update(newData, {where: {id: id}})
+				const updated = await Artists.findByPk(id)
+				res.status(200).json({ message: 'Artist updated successfully', data: updated })
+			}
+		} catch (error: any) {
+			res.status(500).json({ message: error.message })
+		}
+	}
 }
