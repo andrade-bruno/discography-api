@@ -46,4 +46,21 @@ export default class DiscosController {
 			res.status(500).json({ message: error.message })
 		}
 	}
+
+	static getDiscosByType: RequestHandler = async (req, res) => {
+		const { type }  = req.query
+
+		try {
+			const discos = await Discos.findAll({
+				where: {
+					type: String(type)
+				}
+			})
+
+			if (discos.length == 0) res.status(404).json({ message: `Could'nt find any disco from '${type}' type` })
+			else res.status(200).json(discos)
+		} catch (error: any) {
+			res.status(500).json({ message: error.message })
+		}
+	}
 }

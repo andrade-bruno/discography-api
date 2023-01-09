@@ -7,6 +7,12 @@ import { Table, Model, Column, DataType } from 'sequelize-typescript'
 
 export default class Discos extends Model {
 	@Column({
+		type: DataType.INTEGER,
+		allowNull: false
+	})
+	artistId!: number
+
+	@Column({
 		type: DataType.STRING,
 		allowNull: false
 	})
